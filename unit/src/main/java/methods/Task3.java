@@ -1,3 +1,5 @@
+package methods;
+
 public class Task3 {
 
     public static boolean isPositive(int n) {

@@ -1,3 +1,5 @@
+package methods;
+
 public class Task9 {
 
     public static int findMax(int[] arr) {

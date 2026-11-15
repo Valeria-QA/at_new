@@ -1,3 +1,5 @@
+package methods;
+
 public class Task4 {
 
     public static String getGrade(int score) {

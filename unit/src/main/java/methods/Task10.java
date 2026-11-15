@@ -1,3 +1,5 @@
+package methods;
+
 public class Task10 {
 
     public static String[] reverse(String[] arr) {

@@ -1,4 +1,4 @@
-//package org.example;;
+package methods;
 
 public class Task1 {
 

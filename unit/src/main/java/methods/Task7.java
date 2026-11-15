@@ -1,3 +1,5 @@
+package methods;
+
 public class Task7 {
     public static boolean hasBug(String[] messages) {
         boolean result = false;

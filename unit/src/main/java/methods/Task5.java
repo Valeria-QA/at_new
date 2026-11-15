@@ -1,3 +1,5 @@
+package methods;
+
 public class Task5 {
 
     public static String blastOff(int start) {
