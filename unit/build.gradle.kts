@@ -34,3 +34,35 @@ tasks.register("testRunIsOver") {
     }
 }
 
+tasks.register<Test>("runSmoke") {
+    testClassesDirs = sourceSets["test"].output.classesDirs
+    classpath = sourceSets["test"].runtimeClasspath
+    useJUnitPlatform {
+        includeTags("smoke")
+    }
+    testLogging {
+        showStandardStreams = true
+    }
+}
+
+tasks.register<Test>("runRegress") {
+    testClassesDirs = sourceSets["test"].output.classesDirs
+    classpath = sourceSets["test"].runtimeClasspath
+    useJUnitPlatform {
+        includeTags("regress")
+    }
+    testLogging {
+        showStandardStreams = true
+    }
+}
+
+tasks.register<Test>("runNew") {
+    testClassesDirs = sourceSets["test"].output.classesDirs
+    classpath = sourceSets["test"].runtimeClasspath
+    useJUnitPlatform {
+        includeTags("new")
+    }
+    testLogging {
+        showStandardStreams = true
+    }
+}
