@@ -67,3 +67,16 @@ tasks.register<Test>("runNew") {
         showStandardStreams = true
     }
 }
+
+tasks.register<Test>("runApiTests") {
+    group = "verification"
+    testClassesDirs = sourceSets["test"].output.classesDirs
+    classpath = sourceSets["test"].runtimeClasspath
+    useJUnitPlatform {
+        includeTags("api")
+    }
+    testLogging {
+        showStandardStreams = true
+    }
+    finalizedBy("testRunIsOver")
+}
